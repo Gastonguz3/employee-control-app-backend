@@ -66,11 +66,16 @@ spring.profiles.active=dev
 #Entorno de produccion activado => Uso MySQL
 #spring.profiles.active=prod
 ```
-**Aclaracion**: En *src/main/java/com.gaston.project.employee/configuration/CorsConfig* ya se encuentran las rutas de ambos entornos disponibles:
+**Aclaracion**: Al hacer estos cambios, en *src/main/java/com.gaston.project.employee/configuration/CorsConfig* ya se ajuta la ruta dependiendo el entorno:
+
+```
+@Value("${frontend.url}")
+private String frontendUrl;
+```
 ```
 registry.addMapping("/api/**")          //ruta donde habilita CORS
-                        .allowedOrigins("http://localhost:5173",         //para desarrollo
-                                        "https://gastonguz3.github.io")  //para produccion
+                        .allowedOrigins(frontendUrl)  //ruta del frontend -> produccion: https://gastonguz3.github.io
+                                                      //                  -> desarrollo: http://localhost:5173
                         .allowedMethods("GET", "POST", "PUT", "DELETE")
                         .allowedHeaders("*")
                         .allowCredentials(false);
