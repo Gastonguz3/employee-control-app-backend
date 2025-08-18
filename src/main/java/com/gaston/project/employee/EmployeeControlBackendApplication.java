@@ -20,23 +20,25 @@ public class EmployeeControlBackendApplication {
 	@Bean
 	CommandLineRunner init(EmployeeRepository employeeRepository){
 
-		return args -> {
-			EmployeeEntity employeeGaston = EmployeeEntity.builder()
-					.name("Gaston Guzman")
-					.email("gastonezguzman@gmail.com")
-					.phone("1234-5678")
-					.department("Web Developer")
-					.build();
+        return args -> {
+            if(employeeRepository.count() == 0){  //Para que se ejecute solo una vez
+                EmployeeEntity employeeGaston = EmployeeEntity.builder()
+                        .name("Gaston Guzman")
+                        .email("gastonezguzman@gmail.com")
+                        .phone("1234-5678")
+                        .department("Web Developer")
+                        .build();
 
-			EmployeeEntity employeeFenix = EmployeeEntity.builder()
-					.name("Fenix")
-					.email("fenixn@gmail.com")
-					.phone("9876-54321")
-					.department("Human Resources")
-					.build();
+                EmployeeEntity employeeFenix = EmployeeEntity.builder()
+                        .name("Fenix")
+                        .email("fenixn@gmail.com")
+                        .phone("9876-54321")
+                        .department("Human Resources")
+                        .build();
 
-			employeeRepository.saveAll(List.of(employeeGaston, employeeFenix));
-		};
+                employeeRepository.saveAll(List.of(employeeGaston, employeeFenix));
+            }
+        };
 	}
 
 }
