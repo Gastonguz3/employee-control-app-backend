@@ -85,4 +85,8 @@ registry.addMapping("/api/**")          //ruta donde habilita CORS
 
 ![](./src/main/resources/static/diagrama.jpg)
 
+Para ver la pagina [ingrese aca](https://gastonguz3.github.io/employee-control-app/)
+
+Para ver el codigo del frontend [ingrese aca](https://github.com/Gastonguz3/employee-control-app)
+
 #### Autor: Gaston Guzman [linKedIn](https://www.linkedin.com/in/gaston-guzman-192730352/).
