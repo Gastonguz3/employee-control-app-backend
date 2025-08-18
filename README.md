@@ -19,7 +19,7 @@ Expone una **API REST** para gestionar empleados con operaciones **CRUD** y est�
   1. JDBC URL: jdbc:h2:mem:employee_db
   2. user: sa
   3. password: password
-* MySQL: para producción en Render.
+* PostgreSQL: para producción en Render.
 * Lombok: para reducir código repetitivo con anotaciones
 
 ### Estructura del proyecto
@@ -63,7 +63,7 @@ En caso de que se quiera clonar el repositorio y ejecutar el codigo **localmente
 #Entorno de desarollo activado => Uso H2 database
 spring.profiles.active=dev
 
-#Entorno de produccion activado => Uso MySQL
+#Entorno de produccion activado => Uso PostgreSQL
 #spring.profiles.active=prod
 ```
 **Aclaracion**: Al hacer estos cambios, en *src/main/java/com.gaston.project.employee/configuration/CorsConfig* ya se ajuta la ruta dependiendo el entorno:
