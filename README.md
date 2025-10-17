@@ -1,7 +1,11 @@
 # Employee Control App - Backend
 
 Este es el backend del proyecto **Employee Control**, desarrollado con **Spring Boot**.  
-Expone una **API REST** para gestionar empleados con operaciones **CRUD** y está integrado con un frontend en React.
+Expone una **API REST** para gestionar empleados con operaciones **CRUD** y está integrado con un frontend en React. Fue desplegado en Render.
+
+Para ver la pagina [ingrese aca](https://gastonguz3.github.io/employee-control-app/)
+
+Para ver el codigo del frontend [ingrese aca](https://github.com/Gastonguz3/employee-control-app)
 
 ### Tecnologías Usadas
 
@@ -84,9 +88,5 @@ registry.addMapping("/api/**")          //ruta donde habilita CORS
 ### Diagrama 
 
 ![](./src/main/resources/static/diagrama.jpg)
-
-Para ver la pagina [ingrese aca](https://gastonguz3.github.io/employee-control-app/)
-
-Para ver el codigo del frontend [ingrese aca](https://github.com/Gastonguz3/employee-control-app)
 
 #### Autor: Gaston Guzman [linKedIn](https://www.linkedin.com/in/gaston-guzman-192730352/).
