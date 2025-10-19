@@ -12,7 +12,7 @@ Para ver el codigo del frontend [ingrese aca](https://github.com/Gastonguz3/empl
 * Java 21
 * Spring Boot
    * Spring Web
-   * Spring Data JPA
+   * Spring Data JPA - Hibernate
    * Spring Validation
 * ModelMapper: para conversión entre entidades y DTOs.
 * Swagger / OpenAPI:  documentación interactiva de la API
