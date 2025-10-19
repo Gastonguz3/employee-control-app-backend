@@ -14,6 +14,7 @@ Para ver el codigo del frontend [ingrese aca](https://github.com/Gastonguz3/empl
    * Spring Web
    * Spring Data JPA - Hibernate
    * Spring Validation
+* Docker: para el despligue en Render
 * ModelMapper: para conversión entre entidades y DTOs.
 * Swagger / OpenAPI:  documentación interactiva de la API
   * Para usarlo localmente (clonando el repositorio): [Swagger Local](http://localhost:8080/swagger-ui/index.html)
